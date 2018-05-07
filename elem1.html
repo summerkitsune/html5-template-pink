@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Éléments 1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="titles">
+      <div class="brand">
+        <a href="./index.html" title="Index">Site Web n°1</a>
+      </div>
+      <div class="subtitle">Design fixe et centré</div>
+      <div class="search-box">
+        <span>Chercher sur le site</span><br>
+        <input id="search" type="search" placeholder="mots-clés..."
+        ><input type="button" value="Chercher" onclick="alert('coucou') ">
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li class="menu"><a href="./elem1.html">Éléments 1 &#9660;</a>
+          <ul>
+            <li><a href="./elem1.html#tableaux">Tableaux</a></li>
+            <li><a href="./elem1.html#formulaire">Formulaire</a></li>
+            <li><a href="./elem1.html#video">Vidéo</a></li>
+            <li><a href="./elem1.html#semantic-tags">Balises sémantiques HTML5</a></li>
+            <li><a href="./elem1.html#pseudo-el-and-classes">Pseudo-élements et pseudo-classes</a></li>
+            <li><a href="./elem1.html#display-and-overflow">Display et overflow</a></li>
+          </ul>
+        </li
+        ><li class="menu"><a href="./elem2.html">Éléments 2 &#9660;</a>
+          <ul>
+            <li><a href="./elem2.html#script-externe">Script externe</a></li>
+            <li><a href="./elem2.html#feuille-style-interne">Feuille de style interne</a></li>
+            <li><a href="./elem2.html#attribut-style">L'attribut style</a></li>
+            <li><a href="./elem2.html#positionnement-absolu">Positionnement absolu</a></li>
+            <li><a href="./elem2.html#superposition-blocs">Superposition de blocs</a></li>
+          </ul>
+        </li
+        ><li class="menu"><a href="./responsive.html">Design adaptatif</a></li
+        ><li class="menu"><a href="./styles-alt.html">Styles alternatifs</a></li
+        ><li class="menu"><a href="./iframes.html">Iframes</a></li>
+      </ul>  
+    </nav>
+  </header>
+
+  <aside class="left">
+    <span>Connectez-vous</span>
+    <form action="#" onsubmit="alert('coucou')">
+      <input type="email" placeholder="Adresse e-mail" required>
+      <input type="password" placeholder="mot de passe" minlength=12 required>
+      <input type="submit" value="Se connecter">
+    </form>
+  </aside
+  ><section>
+
+    <h1>Éléments 1</h1>
+
+    <h2 id="tableaux">Tableaux</h2>
+
+    <div class="tables">
+
+      <div class="users-table1">
+        <p>Simple tableau</p>
+
+        <table>
+          <tr>
+            <th>Utilisateur</th>
+            <th>Score</th>
+          </tr>
+          <tr>
+            <td>Diane</td>
+            <td>25</td>
+          </tr>
+          <tr>
+            <td>David</td>
+            <td>35</td>
+          </tr>
+          <tr>
+            <td>Michel</td>
+            <td>42</td>
+          </tr>
+          <tr>
+            <td>Laura</td>
+            <td>88</td>
+          </tr>
+          <tr>
+            <td>Éléonore</td>
+            <td>51</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="users-table2">
+        <p>Tableau avec <code>border-collapse</code></p>
+
+        <table>
+          <tr>
+            <th>Utilisateur</th>
+            <th>Score</th>
+          </tr>
+          <tr>
+            <td>Diane</td>
+            <td>25</td>
+          </tr>
+          <tr>
+            <td>David</td>
+            <td>35</td>
+          </tr>
+          <tr>
+            <td>Michel</td>
+            <td>42</td>
+          </tr>
+          <tr>
+            <td>Laura</td>
+            <td>88</td>
+          </tr>
+          <tr>
+            <td>Éléonore</td>
+            <td>51</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <h2 id="formulaire" >Formulaire (Ex: formulaire d'inscription)</h2>
+    <form name="inscription" action="#" method="POST">
+      <div class="form-group">
+        <label for="nom">Nom complet</label>
+        <input type="text" name="nom" id="nom" placeholder="Ex: Jean Dupont" maxlength="255" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Ex: j.dupont@example.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="ddn">Date de naissance</label>
+	<input type="text" name="ddn" id="ddn" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}" placeholder="YYYY-MM-DD" required>
+      </div>
+
+      <div class="form-group">
+        <label for="pays">Pays</label>
+        <select id="pays" name="pays" required>
+          <option value="">Choisir...</option>
+          <option value="be">Belgique</option>
+          <option value="ca">Canada</option>
+          <option value="fr">France</option>
+          <option value="ch">Suisse</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="username">Pseudo souhaité</label>
+        <input type="text" name="username" id="username" placeholder="Ex: jeanjean1989">
+      </div>
+
+      <div class="form-group">
+        <label>Activité</label>
+        <input type="radio" name="activity" id="trekking" value="trekking" checked> <label for="trekking">Trekking</label>
+        <input type="radio" name="activity" id="alpinisme" value="alpinisme"> <label for="alpinisme">Alpinisme</label>
+        <input type="radio" name="activity" id="parkour" value="parkour"> <label for="parkour">Parkour</label>
+      </div>
+
+      <div class="form-group">
+        <label for="desc" class="textarea-label">Description du profil</label>
+        <textarea id="desc" name="desc" cols="40" rows="5" placeholder="Ex: Je fais du trekking et j'aime les animaux"></textarea>
+      </div>
+
+      <div class="form-group">
+        <input id="cgu" name="cgu" type="checkbox" required>
+        <label for="cgu" class="cgu">J'accepte les <a href="./CGU.html" target="_blank">Conditions Générales d'Utilisation</a></label>
+      </div>
+
+      <div class="form-group">
+        <input type="submit" value="Inscription" title="Cliquer pour s'inscrire">
+      </div>
+
+    </form>
+
+    <p>Note: Les éléments <code>&lt;input type="date" &gt;</code> ne <a href="https://caniuse.com/#feat=input-datetime" target="_blank" title="Can I Use: Date and time input types">fonctionnent pas sur IE</a>, il faudra alors soit utiliser un date-picker jquery pour avoir la même fonctionnalité, soit faire un <code>&lt;input type="text"&gt;</code> en demandant à l'utilisateur d'insérer une date en spécifiant le format (Ex: YYYY-MM-DD).</p>
+
+    <h2 id="video">Vidéo</h2>
+    
+    <video width="460" controls>
+      <source src="./assets/media/Big_Buck_Bunny_8_seconds_bird_clip.ogv.360p.webm" type="video/webm">
+      Votre navigateur ne supporte pas la balise &lt;video&gt;
+    </video>
+    <p>Crédits pour la vidéo :</p>
+
+    <dl lang="en">
+      <div>
+        <dt>Title</dt>
+        <dd>Big Buck Bunny 8 seconds bird clip.ogv</dd>
+      </div>
+      <div>
+        <dt>Author</dt>
+        <dd>(c) copyright Blender Foundation\www.bigbuckbunny.org</dd>
+      </div>
+      <div>
+        <dt>Date</dt>
+        <dd>March 2008 (original created)</dd>
+      </div>
+      <div>
+        <dt>License</dt>
+        <dd><a href="https://creativecommons.org/licenses/by/3.0/" target="_blank">Creative Commons Attribution 3.0 License</a></dd>
+      </div>
+    </dl>
+
+    <h2 id="semantic-tags">Balises sémantiques HTML5</h2>
+
+    <p>Voir dans le code source de cette page (<kbd>F12</kbd> pour ouvrir l'inspecteur dans <em>Firefox</em>) les balises suivantes :</p>
+    <ul>
+      <li><code>&lt;header&gt;</code> pour l'entête</li>
+      <li><code>&lt;nav&gt;</code> pour les liens de navigation dans l'entête</li>
+      <li><code>&lt;section&gt;</code> pour la section principale qui contient la majorité du contenu de la page</li>
+      <li><code>&lt;aside&gt;</code> pour les barres latérales</li>
+      <li><code>&lt;article&gt;</code> pour les articles dans la barre latérale droite</li>
+      <li><code>&lt;footer&gt;</code> pour le bas de page</li>
+    </ul>
+
+    <h2 id="pseudo-el-and-classes">Pseudo-élements et pseudo-classes</h2>
+
+    <p>Voir dans le code source de cette page (<kbd>F12</kbd> pour ouvrir l'inspecteur dans <em>Firefox</em>) les propriétés suivantes :</p>
+    <ul>
+      <li><code>:focus</code> pour les champs du <a href="#formulaire">formulaire plus haut</a></li>
+      <li><code>:hover</code> pseudo-classe présente sur tous les liens de cette page, qui change les styles au survol</li>
+      <li><code>::selection</code> pseudo-élément utilisé ici pour changer la couleur de fond par défaut des sélections</li>
+      <li><code>::before</code> exemple : <a href="#" class="pseudo-element-before">salut</a></li>
+      <li><code>::after</code> exemple : <a href="#" class="pseudo-element-after">salut</a></li>
+    </ul>
+
+    <h2 id="display-and-overflow">Display et overflow</h2>
+
+    <ul>
+      <li><code>display</code> propriété utilisée, entre autres, pour le menu déroulant</li>
+      <li><code>overflow</code> propriété utilisée pour rendre cette section "scrollable" (barre de défilement)</li>
+    </ul>
+
+    <div class="vsp"></div>
+
+  </section
+  ><aside class="right">
+
+      <div class="aside-title">Souscrire au flux RSS</div>
+
+      <a href="#" title="Souscrire au flux">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="128px" height="128px" id="RSSicon" viewBox="0 0 256 256" class="rss-icon">
+          <defs>
+          <linearGradient x1="0.085" y1="0.085" x2="0.915" y2="0.915" id="RSSg">
+          <stop offset="0.0" stop-color="#E3702D"/><stop offset="0.1071" stop-color="#EA7D31"/>
+          <stop offset="0.3503" stop-color="#F69537"/><stop offset="0.5" class="rss-icon-hover" stop-color="#FB9E3A"/>
+          <stop offset="0.7016" stop-color="#EA7C31"/><stop offset="0.8866" stop-color="#DE642B"/>
+          <stop offset="1.0" stop-color="#D95B29"/>
+          </linearGradient>
+          </defs>
+          <rect width="256" height="256" rx="55" ry="55" x="0" y="0" fill="#CC5D15"/>
+          <rect width="246" height="246" rx="50" ry="50" x="5" y="5" fill="#F49C52"/>
+          <rect width="236" height="236" rx="47" ry="47" x="10" y="10" fill="url(#RSSg)"/>
+          <circle cx="68" cy="189" r="24" fill="#FFF"/>
+          <path d="M160 213h-34a82 82 0 0 0 -82 -82v-34a116 116 0 0 1 116 116z" fill="#FFF"/>
+          <path d="M184 213A140 140 0 0 0 44 73 V 38a175 175 0 0 1 175 175z" fill="#FFF"/>
+        </svg>
+      </a>
+
+      <div class="aside-title">Tags</div>
+
+      <ul class="tags">
+        <li><a href="./index.html?tag=Vim">Vim</a></li
+        ><li><a href="./index.html?tag=HTML">HTML</a></li
+        ><li><a href="./index.html?tag=CSS">CSS</a></li
+        ><li><a href="./index.html?tag=JavaScript">JavaScript</a></li
+        ><li><a href="./index.html?tag=VueJS">VueJS</a></li
+        ><li><a href="./index.html?tag=PHP">PHP</a></li
+        ><li><a href="./index.html?tag=Symfony">Symfony</a></li
+        ><li><a href="./index.html?tag=Doctrine">Doctrine</a></li
+        ><li><a href="./index.html?tag=Twig">Twig</a></li
+        ><li><a href="./index.html?tag=GNU/Linux">GNU/Linux</a></li
+        ><li><a href="./index.html?tag=Apache">Apache</a></li
+        ><li><a href="./index.html?tag=MariaDB">MariaDB</a></li
+        ><li><a href="./index.html?tag=Firefox">Firefox</a></li
+        ><li><a href="./index.html?tag=CLI">CLI</a></li>
+      </ul>
+
+      <div class="aside-title">Derniers articles</div>
+
+      <div class="articles">
+        <article>
+          <h3><a href="#">Article 1</a></h3>
+          <p>Ipsum quam perferendis molestiae...</p>
+        </article>
+        <article>
+          <h3><a href="#">Article 2</a></h3>
+          <p>Amet quasi maxime harum ipsum...</p>
+        </article>
+        <article>
+          <h3><a href="#">Article 3</a></h3>
+          <p>Consectetur autem possimus voluptates...</p>
+        </article>
+      </div>
+
+  </aside>
+
+  <footer>
+    Copyright © 2018 <strong>Arnaud Clarebots</strong><br>
+    Travail publié sous <a href="./LICENSE.html" target="_blank">License MIT</a>
+  </footer>
+
+
+</body>
+</html>
+
