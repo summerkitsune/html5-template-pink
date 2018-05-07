@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Index</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="titles">
+      <div class="brand">
+        <a href="./index.html" title="Index">Site Web n°1</a>
+      </div>
+      <div class="subtitle">Design fixe et centré</div>
+      <div class="search-box">
+        <span>Chercher sur le site</span><br>
+        <input id="search" type="search" placeholder="mots-clés..."
+        ><input type="button" value="Chercher" onclick="alert('coucou') ">
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li class="menu"><a href="./elem1.html">Éléments 1 &#9660;</a>
+          <ul>
+            <li><a href="./elem1.html#tableaux">Tableaux</a></li>
+            <li><a href="./elem1.html#formulaire">Formulaire</a></li>
+            <li><a href="./elem1.html#video">Vidéo</a></li>
+            <li><a href="./elem1.html#semantic-tags">Balises sémantiques HTML5</a></li>
+            <li><a href="./elem1.html#pseudo-el-and-classes">Pseudo-élements et pseudo-classes</a></li>
+            <li><a href="./elem1.html#display-and-overflow">Display et overflow</a></li>
+          </ul>
+        </li
+        ><li class="menu"><a href="./elem2.html">Éléments 2 &#9660;</a>
+          <ul>
+            <li><a href="./elem2.html#script-externe">Script externe</a></li>
+            <li><a href="./elem2.html#feuille-style-interne">Feuille de style interne</a></li>
+            <li><a href="./elem2.html#attribut-style">L'attribut style</a></li>
+            <li><a href="./elem2.html#positionnement-absolu">Positionnement absolu</a></li>
+            <li><a href="./elem2.html#superposition-blocs">Superposition de blocs</a></li>
+          </ul>
+        </li
+        ><li class="menu"><a href="./responsive.html">Design adaptatif</a></li
+        ><li class="menu"><a href="./styles-alt.html">Styles alternatifs</a></li
+        ><li class="menu"><a href="./iframes.html">Iframes</a></li>
+      </ul>  
+    </nav>
+  </header>
+
+  <aside class="left">
+    <span>Connectez-vous</span>
+    <form action="#" onsubmit="alert('coucou')">
+      <input type="email" placeholder="Adresse e-mail" required>
+      <input type="password" placeholder="mot de passe" minlength=12 required>
+      <input type="submit" value="Se connecter">
+    </form>
+  </aside
+  ><section>
+
+    <h1>Index</h1>
+
+    <p>Bien que le menu devrait suffire à naviguer partout dans le site, j'ai repris ci-dessous la consigne et j'y ait ajouté des liens pour permettre une correction plus facile.</p>
+
+    <h2>Consigne</h2>
+
+    <p>Les sites réalisés devront comporter, au minimum les éléments suivants :</p>
+
+    <ul>
+      <li>1 page dont le design s'adaptera automatiquement à une présentation sur différents appareils mobiles (smartphones, tablettes)</li>
+      <li>1 page permettant  à l’utilisateur de choisir, au sein du navigateur, parmi 2 « styles » définis par vos soins.</li>
+      <li>1 page contenant sous forme « d’insert » 1 autre page .</li>
+      <li>1 script javascript défini dans un fichier externe.</li>
+      <li>1 tableau avec fusion de cellules.</li>
+      <li>1 formulaire comportant tous les types de zones de saisie et les boutons fondamentaux nécessaires. La couleur d’arrière-plan des zones de saisies de type « textuel » changera lorsqu’elles seront « sélectionnées » .</li>
+      <li>Un « click » sur un libellé d'une des zones de saisie du formulaire renverra le pointeur dans la zone de saisie concernée</li>
+      <li>1 séquence vidéo.</li>
+      <li>1 feuille de style interne.</li>
+      <li>1 formatage CSS au sein d’une balise (X)HTML.</li>
+      <li>Le positionnement « absolu » d’un bloc au sein d’un bloc lui-même « positionné ».<br>
+        Une superposition partielle de blocs les uns au-dessus des autres, l’ordre de  superposition « par défaut » étant modifié par vos soins.</li>
+      <li>L’utilisation des propriétés, valeurs, balises ou pseudo-formats suivants :
+        <ul>
+          <li>:before</li>
+          <li>:after</li>
+          <li>:hover</li>
+          <li>:focus</li>
+          <li>&lt;span&gt;</li>
+          <li>&lt;em&gt;</li>
+          <li>&lt;strong&gt;</li>
+          <li>overflow</li>
+          <li>display</li>
+          <li>&lt;nav&gt;</li>
+          <li>&lt;section&gt;</li>
+          <li>&lt;article&gt;</li>
+          <li>&lt;aside&gt;</li>
+        </ul>
+      </li>
+    </ul>
+
+    <div class="vsp"></div>
+
+  </section
+  ><aside class="right">
+
+      <div class="aside-title">Souscrire au flux RSS</div>
+
+      <a href="#" title="Souscrire au flux">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="128px" height="128px" id="RSSicon" viewBox="0 0 256 256" class="rss-icon">
+          <defs>
+          <linearGradient x1="0.085" y1="0.085" x2="0.915" y2="0.915" id="RSSg">
+          <stop offset="0.0" stop-color="#E3702D"/><stop offset="0.1071" stop-color="#EA7D31"/>
+          <stop offset="0.3503" stop-color="#F69537"/><stop offset="0.5" class="rss-icon-hover" stop-color="#FB9E3A"/>
+          <stop offset="0.7016" stop-color="#EA7C31"/><stop offset="0.8866" stop-color="#DE642B"/>
+          <stop offset="1.0" stop-color="#D95B29"/>
+          </linearGradient>
+          </defs>
+          <rect width="256" height="256" rx="55" ry="55" x="0" y="0" fill="#CC5D15"/>
+          <rect width="246" height="246" rx="50" ry="50" x="5" y="5" fill="#F49C52"/>
+          <rect width="236" height="236" rx="47" ry="47" x="10" y="10" fill="url(#RSSg)"/>
+          <circle cx="68" cy="189" r="24" fill="#FFF"/>
+          <path d="M160 213h-34a82 82 0 0 0 -82 -82v-34a116 116 0 0 1 116 116z" fill="#FFF"/>
+          <path d="M184 213A140 140 0 0 0 44 73 V 38a175 175 0 0 1 175 175z" fill="#FFF"/>
+        </svg>
+      </a>
+
+      <div class="aside-title">Tags</div>
+
+      <ul class="tags">
+        <li><a href="./index.html?tag=Vim">Vim</a></li
+        ><li><a href="./index.html?tag=HTML">HTML</a></li
+        ><li><a href="./index.html?tag=CSS">CSS</a></li
+        ><li><a href="./index.html?tag=JavaScript">JavaScript</a></li
+        ><li><a href="./index.html?tag=VueJS">VueJS</a></li
+        ><li><a href="./index.html?tag=PHP">PHP</a></li
+        ><li><a href="./index.html?tag=Symfony">Symfony</a></li
+        ><li><a href="./index.html?tag=Doctrine">Doctrine</a></li
+        ><li><a href="./index.html?tag=Twig">Twig</a></li
+        ><li><a href="./index.html?tag=GNU/Linux">GNU/Linux</a></li
+        ><li><a href="./index.html?tag=Apache">Apache</a></li
+        ><li><a href="./index.html?tag=MariaDB">MariaDB</a></li
+        ><li><a href="./index.html?tag=Firefox">Firefox</a></li
+        ><li><a href="./index.html?tag=CLI">CLI</a></li>
+      </ul>
+
+      <div class="aside-title">Derniers articles</div>
+
+      <div class="articles">
+        <article>
+          <h3><a href="#">Article 1</a></h3>
+          <p>Ipsum quam perferendis molestiae...</p>
+        </article>
+        <article>
+          <h3><a href="#">Article 2</a></h3>
+          <p>Amet quasi maxime harum ipsum...</p>
+        </article>
+        <article>
+          <h3><a href="#">Article 3</a></h3>
+          <p>Consectetur autem possimus voluptates...</p>
+        </article>
+      </div>
+
+  </aside>
+
+  <footer>
+    Copyright © 2018 <strong>Julie Clarebots</strong><br>
+    Travail publié sous <a href="./LICENSE.html" target="_blank">License MIT</a>
+  </footer>
+
+
+</body>
+</html>
+

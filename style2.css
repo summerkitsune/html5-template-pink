@@ -1,0 +1,483 @@
+html {
+  background-color: darkslateblue;
+  background:
+    linear-gradient(transparent, deepskyblue),
+    repeating-linear-gradient(-45deg, transparent, transparent .2rem, hsla(190, 40%, 50%, .1) .2rem, hsla(190, 40%, 50%, .1) .4rem),
+    #c07bc5;
+  height: 100%;
+}
+
+body {
+  margin: auto;
+  max-width: 900px;
+
+  font-size: 16px;
+  font-family: "Helvetica", Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Lobster;
+  src: url(./assets/fonts/Lobster/Lobster-Regular.ttf)
+}
+
+::-moz-selection {
+  background-color: hsla(350, 90%, 60%, .4);
+}
+::selection {
+  background-color: hsla(350, 90%, 60%, .4);
+}
+
+header {
+  color: white;
+  border-radius: 20px 20px 0 0;
+  background-color: lightpink;
+  background: linear-gradient(to right, darkslateblue, deepskyblue);
+}
+
+.titles {
+  margin-top: 20px;
+  padding: 10px;
+  border-bottom: 1px solid cyan;
+}
+
+.brand, .subtitle, .search-box {
+  display: inline-block;
+}
+.brand a {
+  font-family: 'Lobster', cursive;
+  font-size: 2em;
+  color: #8be2ff;
+  text-decoration: none;
+}
+.search-box {
+  color: black;
+  text-align: right;
+}
+
+.brand a:hover {
+  color: white;
+}
+
+.subtitle {
+  font-style: italic;
+  font-size: .9em;
+  margin-left: 10px;
+}
+
+.search-box {
+  float: right;
+}
+.search-box span {
+  font-size: .8em;
+}
+.search-box input[type="button"]{
+  border: 1px solid royalblue;
+  height: 21px;
+  background-color: white;
+  color: black;
+}
+.search-box input[type="search"]{
+  border: none;
+  height: 21px;
+  border: 1px solid royalblue;
+  border-right: none;
+  padding: 3px;
+}
+.search-box input[type="button"]:hover{
+  background-color: pink;
+  cursor: pointer;
+  transition: .6s;
+}
+
+/* menu déroulant */
+
+nav {
+  border-bottom: 1px solid cyan;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.menu {
+  position: relative;
+  display: inline-block;
+}
+
+.menu > a {
+  display: block;
+  padding: 10px;
+  border-right: 1px solid cyan;
+}
+
+.menu > ul {
+  position: absolute;
+  display: none;
+  width: 150px;
+  border-top: 1px solid cyan;
+  z-index: 10;
+}
+
+.menu li a {
+  display: block;
+  padding: 10px;
+  background-color: darkslateblue;
+}
+
+.menu > ul li + li a {
+  border-top: 1px solid cyan;
+}
+
+nav a {
+  color: floralwhite;
+  text-decoration: none;
+}
+nav a:hover {
+  color: white;
+  background-color: deepskyblue;
+  transition: background-color 1s;
+}
+
+.menu:hover ul {
+  display: block;
+}
+
+/* /menu déroulant */
+
+aside.left {
+  display: inline-block;
+  background-color: #dceef5;
+  width: 180px;
+  height: 600px;
+  padding: 10px;
+  font-size: .8em;
+}
+aside.left > *{
+  display: block;
+}
+aside.left span {
+  margin: 10px 0;
+  /*font-size: .8em;*/
+}
+aside.left input[type="email"] {
+  height: 21px;
+  width: 172px;
+  padding: 3px;
+  border: 1px solid royalblue;
+  border-radius: 8px 8px 0 0;
+}
+aside.left input[type="password"] {
+  height: 21px;
+  width: 172px;
+  padding: 3px;
+  margin-bottom: 10px;
+  border: 1px solid royalblue;
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+}
+aside.left input[type="submit"], form[name="inscription"] input[type="submit"] {
+  height: 28px;
+  width: 180px;
+  padding: 5px 3px;
+  border: 1px solid royalblue;
+  border-radius: 8px;
+
+  background-color: lightpink;
+
+  color: royalblue;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+aside.left input[type="submit"]:hover, form[name="inscription"] input[type="submit"]:hover {
+  background-color: royalblue;
+  color: white;
+  cursor: pointer;
+  transition: .6s;
+}
+
+section {
+  display: inline-block;
+  width: 480px;
+  vertical-align: top;
+  font-size: .9em;
+  padding: 10px;
+
+  height: 600px;
+  overflow-y: scroll;
+  background: white;
+}
+
+section h1 {
+  color: darkslateblue;
+  text-align: center;
+}
+
+section h2 {
+  color: darkslateblue;
+  font-size: 1.1em;
+  border-bottom: 1px solid darkslateblue;
+  padding-top: 10px;
+  margin-top: 3px;
+}
+
+section ul li {
+  line-height: 1.6em;
+}
+section p {
+  line-height: 1.6em;
+}
+
+
+section dl div {
+  margin: .3em 0;
+}
+section dl dd, section dl dt {
+  display: inline;
+}
+section dt {
+  font-weight: bold;
+}
+section dt::after {
+  content: ':';
+  font-weight: normal;
+}
+section dd {
+  margin-left: 0;
+}
+
+section a {
+  color: royalblue;
+  text-decoration: none;
+  border-bottom: 1px solid royalblue;
+  padding: 0 2px;
+}
+section a:hover {
+  background-color: #ffecec;
+  transition: .4s;
+}
+section div.vsp {
+  height: 50px;
+}
+
+aside.right {
+  display: inline-block;
+  background-color: #dceef5;
+  width: 180px;
+  height: 600px;
+  vertical-align: top;
+  padding: 10px;
+  float: right;
+  font-size: .8em;
+}
+
+aside.right .aside-title {
+  margin: 10px 0;
+}
+
+.rss-icon {
+  width: 50px;
+  height: 50px;
+}
+/* SVG powaaaaa! */
+.rss-icon:hover .rss-icon-hover {
+  stop-color: hsla(0, 100%, 100%, .5) !important;
+  transition: .8s;
+}
+
+ul.tags {
+  padding-left: 0;
+  list-style-type: none;
+}
+ul.tags li {
+  display: inline;
+}
+ul.tags a {
+  display: inline-block;
+  background-color: #eee;
+  border: 1px solid lightblue;
+  color: royalblue;
+  text-decoration: none;
+  padding: 2px 6px;
+  margin: 2px;
+  border-radius: 4px;
+}
+ul.tags a:hover {
+  background-color: #ffecec;
+  border: 1px solid royalblue;
+  transition: .2s;
+}
+
+aside.right article {
+  margin: .8em 0;
+}
+aside.right article * {
+  margin: .2em 0;
+}
+aside.right article h3 {
+  font-size: 1em;
+  font-weight: normal;
+}
+aside.right article a {
+  color: royalblue;
+  text-decoration: none;
+  border-bottom: 1px solid royalblue;
+  padding: 0 2px;
+}
+aside.right article a:hover{
+  background-color: #ffecec;
+  transition: .4s;
+}
+
+footer {
+  background-color: darkslateblue;
+  background: linear-gradient(to right, darkslateblue, deepskyblue);
+  border-top: 1px solid cyan;
+  font-size: .8em;
+  padding: 10px;
+  padding-bottom: 15px;
+
+  border-radius: 0 0 20px 20px;
+  color: azure;
+}
+
+footer a {
+  color: azure;
+  text-decoration: none;
+  border-bottom: 1px solid azure;
+  padding: 0 2px;
+}
+footer a:hover {
+  background-color: lightblue;
+  border-bottom: 1px solid darkslateblue;
+  color: darkslateblue;
+  transition: .4s;
+}
+
+/* tables */
+
+div.tables {
+  padding-bottom: 1em;
+}
+div.tables .users-table1,
+div.tables .users-table2
+{
+  display: inline-block;
+  vertical-align: top;
+}
+div.tables .users-table2 {
+  margin-left: 50px;
+}
+
+[class^="users-table"] table,
+[class^="users-table"] th,
+[class^="users-table"] td {
+  border: 1px solid royalblue;
+}
+.users-table2 table {
+  border-collapse: collapse;
+}
+.users-table2 table,
+.users-table2 td {
+  padding: 3px;
+}
+
+/* /tables */
+
+code, kbd {
+  font-family: monospace, monospace;
+  background-color: #eee;
+  padding: 2px 4px;
+  color: grey;
+}
+kbd {
+  background-color: #ffecec;
+  color: hotpink;
+}
+
+form[name="inscription"] .form-group {
+  display: block;
+  margin-bottom: 10px;
+}
+form[name="inscription"] .form-group label {
+  font-weight: bold;
+  display: inline-block;
+  min-width: 150px;
+}
+form[name="inscription"] .form-group label[for="alpinisme"],
+form[name="inscription"] .form-group label[for="trekking"],
+form[name="inscription"] .form-group label[for="parkour"]
+{
+  display: inline;
+  font-weight: normal;
+}
+form[name="inscription"] .textarea-label {
+  font-weight: bold;
+  display: inline-block;
+  min-width: 150px;
+  vertical-align: top;
+}
+form[name="inscription"] label.cgu {
+  font-weight: normal;
+}
+
+form[name="inscription"] input[type="text"]:focus,
+form[name="inscription"] input[type="email"]:focus,
+form[name="inscription"] textarea:focus
+{
+  background-color: #ffecec;
+}
+
+/* for external links */
+a[href^="http"] {
+  background-image: url("./assets/ext.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 10px;
+  padding-right: 12px;
+}
+
+.pseudo-element-before::before {
+  content:"\2665";
+  color: red;
+  padding: 0 4px 0 2px;
+}
+.pseudo-element-after::after {
+  content:"\2665";
+  color: red;
+  padding: 0 2px 0 4px;
+}
+
+.superposition {
+  position: relative;
+  height: 166px;
+}
+.superposition div {
+  height: 100px;
+  width: 100px;
+}
+.superposition .a {
+  background-color: royalblue;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.superposition .b {
+  background-color: lightpink;
+  position: absolute;
+  top: 33px;
+  left: 33px;
+}
+.superposition .c {
+  background-color: lightblue;
+  position: absolute;
+  top: 66px;
+  left: 66px;
+}
+.superposition .a.invert { z-index: 10; }
+.superposition .b.invert { z-index: 9; }
+.superposition .c.invert { z-index: 8; }
+
