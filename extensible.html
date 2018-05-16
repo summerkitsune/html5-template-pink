@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Extensible</title>
+  <style>
+  html {
+    background-color: lightyellow;
+    background-color: white;
+  }
+  body {
+    font-family: sans-serif;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 1em;
+  }
+
+  h1 {
+    margin-top: 0;
+    padding-top: 1em;
+    font-size: 2em;
+    color: salmon;
+  }
+
+  p {
+    margin: 2em 0;
+  }
+  div.container {
+    margin: 1em 0;
+    background-color: #555;
+  }
+  div.container *{
+    display: inline-block;
+    vertical-align: top;
+    width: calc(50% - 2em);
+    padding: 1em;
+  }
+  div.one {
+    background-color: #eee;
+    height: 100%;
+  }
+  div.two {
+    color: whitesmoke;
+  }
+
+  div.ellipse {
+    margin-top: 3em;
+    border-radius: 50%;
+    background-color: salmon;
+    height: 400px;
+    text-align: center;
+  }
+
+  div.ellipse span {
+    color: white;
+    font-size: 10vw;
+    line-height: 400px;
+    font-style: italic;
+  }
+
+  footer {
+    margin: 4em 0 0 0;
+    padding: 1em;
+    background: linear-gradient(to right, lightpink, #ffecec);
+    border-top: 1px solid hotpink;
+    font-size: .8em;
+    color: darkslateblue;
+  }
+
+  footer a {
+    color: royalblue;
+    text-decoration: none;
+    border-bottom: 1px solid royalblue;
+    padding: 0 2px;
+  }
+  footer a:hover {
+    background-color: #ffecec;
+    transition: .4s;
+  }
+
+  .go-back {
+    margin-top: 1em;
+    padding: 1em;
+    background-color: royalblue;
+  }
+  i.arrow-left {
+    display: inline-block;
+    padding: 3px;
+    border: 3px solid lightblue;
+    border-width: 3px 0 0 3px;
+    transform: rotate(-45deg);
+  }
+  .go-back a {
+    color: whitesmoke;
+    text-decoration: none;
+  }
+  .go-back a:hover span{
+    color: whitesmoke;
+    text-decoration: underline;
+  }
+  .go-back a:hover i {
+    border-color: white;
+  }
+
+  </style>
+</head>
+<body>
+  <header>
+      <h1>Design extensible</h1>
+
+      <div class="go-back">
+        <a href="./index.html"><i class="arrow-left"></i> <span>Retour au site web</span></a>
+      </div>
+  </header>
+
+  <section>
+
+      <p>Lorem <em>architecto</em> nesciunt autem perspiciatis iusto Cupiditate vitae illum neque laudantium rem! Nulla tempora unde id et itaque? Placeat ducimus illo fugiat quasi sed Cum fugit debitis voluptate minus quisquam</p>
+
+      <div class="container">
+          <div class="one">Consectetur quo perspiciatis sed quae dolore Deleniti ut tempore nisi voluptates cumque. Iure cupiditate libero fuga incidunt quibusdam Assumenda enim harum rem debitis exercitationem. Facere quo ratione possimus itaque explicabo.</div><!--
+          --><div class="two">Adipisicing ut rem dolor beatae dolor Officiis quia culpa labore nemo voluptate non iure Expedita in distinctio ratione facere asperiores Omnis dolorum aliquid repellat delectus harum id vel? Aut quae</div>
+      </div>
+
+      <div class="ellipse"><span>Ellipse</span></div>
+
+
+  </section>
+
+
+  <footer>
+    Copyright © 2018 <strong>Julie Clarebots</strong><br>
+    Travail publié sous <a href="./LICENSE.html" target="_blank">License MIT</a>
+  </footer>
+
+
+</body>
+</html>
+
